@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+ <head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script>
+function calculo()
+{
+//passando os valores do campo do form para as variaveis
+
+valor1 = parseInt(document.meu_form.valor1.value);
+valor2 = parseInt(document.meu_form.valor2.value);
+valor3 = parseInt(document.meu_form.valor3.value);
+
+soma = eval(valor1 + valor2 + valor3); //fazendo a soma
+
+//no evento do onblur para que nao apareça 'undefined'
+//eu faço a seguinte condição
+//se a soma for diferente de undefined ele mostra no valor total
+if(soma != undefined)
+{
+document.meu_form.valor_total.value = soma;
+}
+}
+</script>
+</head>
+
+<body>
+<form name="meu_form" method="post" action="">
+<table width="80%" border="0" align="center" cellpadding="2" cellspacing="2">
+<tr>
+<td colspan="2"><div align="center">Formul&aacute;rio</div></td>
+</tr>
+<tr>
+<td width="27%">Valor1:</td>
+<td width="73%"><input name="valor1" type="text" id="valor1"></td>
+</tr>
+<tr>
+<td>Valor2:</td>
+<td><input name="valor2" type="text" id="valor2"></td>
+</tr>
+<tr>
+<td>Valor3:</td>
+<td><input name="valor3" type="text" id="valor3" onBlur="calculo();"></td>
+</tr>
+<tr>
+<td>Valor Total:</td>
+<td><input name="valor_total" onFocus="this.blur()" type="text" id="valor_total"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
+</html>
