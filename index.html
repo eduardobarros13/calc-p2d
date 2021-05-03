@@ -23,40 +23,41 @@
 
 	<section>
 		<div class="container" id="calculadora">
-			<div class="col-lg-6 md-12 sm-12">
-			<div class="row">
-			<div class="shadow-lg p-3 mb-5 bg-body rounded">
-				<i class="fas fa-calculator fa-3x"id="calc"></i>
-				<form name="meu_form" method="post" action="" id="form">
-					<table width="80%" border="0" align="center" cellpadding="2" cellspacing="2">
-						<tr>
-							<td width="27%">Tarifa Aéreo</td>
-							<td width="73%"><i class="fas fa-pencil-alt" id="color"></i> <input name="tarifa" type="text" id="tarifa" placeholder="Valor da tarifa"></td>
-						</tr>
-						<tr>
-							<td>Taxa de Embarque</td>
-							<td><i class="fas fa-pencil-alt" id="color"></i> <input name="taxaEmbarque" type="text" id="taxaEmbarque" placeholder="Taxa de embarque" onBlur="calculo();"></td>
-						</tr>
-						<tr>
-							<td>Total Aéreo</td>
-							<td><i class="fas fa-equals" id="color"></i> <input name="valor_total" onFocus="this.blur()" type="text" id="valor_total"></td>
-						</tr>
-						<tr>
-							<td>Total Aéreo + Taxa P2D</td>
-							<td><i class="fas fa-equals" id="color"></i> <input name="valor_total2" onFocus="this.blur()" type="text" id="valor_total2"></td>
-						</tr>
-						<tr>
-							<td>Comissão Parceiro</td>
-							<td><i class="fas fa-equals" id="color"></i> <input name="valor_total3" onFocus="this.blur()" type="text" id="valor_total3"></td>
-						</tr>
-					</table>
-				</form>
-				<br/>
-				<button class="btn btn-success" id="button"><a onClick="form.reset();">Limpar</a></button>
+			<div class="col-lg-12 md-12 sm-12">
+				<div class="row">
+					<div class="shadow-lg p-3 mb-5 bg-body rounded">
+						<i class="fas fa-calculator fa-3x"id="calc"></i>
+						<h5>Calculadora de comissão parceiro P2D</h5>
+						<form name="meu_form" method="post" action="" id="form">
+							<table width="80%" border="0" align="center" cellpadding="2" cellspacing="2">
+								<tr>
+									<td width="27%">Tarifa Aéreo</td>
+									<td width="73%"><i class="fas fa-pencil-alt" id="color"></i> <input name="tarifa" type="text" id="tarifa" placeholder="Valor da tarifa"></td>
+								</tr>
+								<tr>
+									<td>Taxa de Embarque</td>
+									<td><i class="fas fa-pencil-alt" id="color"></i> <input name="taxaEmbarque" type="text" id="taxaEmbarque" placeholder="Taxa de embarque" onBlur="calculo();"></td>
+								</tr>
+								<tr>
+									<td>Total Aéreo</td>
+									<td><i class="fas fa-equals" id="color"></i> <input name="valor_total" onFocus="this.blur()" type="text" id="valor_total"></td>
+								</tr>
+								<tr>
+									<td>Total Aéreo + Taxa P2D</td>
+									<td><i class="fas fa-equals" id="color"></i> <input name="valor_total2" onFocus="this.blur()" type="text" id="valor_total2"></td>
+								</tr>
+								<tr>
+									<td>Comissão Parceiro</td>
+									<td><i class="fas fa-equals" id="color"></i> <input name="valor_total3" onFocus="this.blur()" type="text" id="valor_total3"></td>
+								</tr>
+							</table>
+						</form>
+						<br/>
+						<button class="btn btn-success" id="button"><a onClick="form.reset();">Limpar</a></button>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-		</div>
-		</section>
-	</body>
-	</html>
+	</section>
+</body>
+</html>
