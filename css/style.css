@@ -1,0 +1,11 @@
+input{
+	border-radius: 5px;
+}
+form{
+	margin-top: 60px;
+}
+button{
+	margin-left: 50%;
+	color: white;
+	background-color: green;
+}
