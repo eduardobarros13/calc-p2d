@@ -1,11 +1,28 @@
 input{
 	border-radius: 5px;
 }
-form{
-	margin-top: 60px;
+#calculadora{
+	margin-top: 5%;
 }
-button{
-	margin-left: 50%;
-	color: white;
-	background-color: green;
+#calc{
+	float: right;
+	color: #d88537;
+
+
+}
+#button{
+	margin-left: 40%;
+}
+#nav{
+	background-color: #455ed1;
+	background: #455ed1;
+}
+#air{
+	color: #d88537;
+
+}
+#color{
+	color: #d88537;
+
+
 }
