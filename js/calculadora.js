@@ -3,9 +3,11 @@ function calculo()
 //passando os valores do campo do form para as variaveis
 tarifa = parseFloat(document.meu_form.tarifa.value);
 taxaEmbarque = parseFloat(document.meu_form.taxaEmbarque.value);
+cambio = parseFloat(document.meu_form.cambio.value);
+
 
 soma1step = eval(tarifa + taxaEmbarque); //fazendo a soma
-
+soma1step = (soma1step * cambio);
 
 document.meu_form.valor_total.value = soma1step.toFixed(2);
 
