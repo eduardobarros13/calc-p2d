@@ -23,11 +23,16 @@ input{
 }
 #color{
 	color: #d88537;
+	font-size: 20px;
+	letter-spacing: 1px;
+
 
 
 }
 body{
 	font-size: 20px;
+	letter-spacing: 1px;
+
 }
 footer{
 	background-color: gray;
