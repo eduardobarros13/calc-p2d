@@ -12,14 +12,20 @@ document.meu_form.valor_total.value = soma1step.toFixed(2);
 
 //fazendo o segundo passo
 
-taxaP2D = (0.10);
-soma2step = (soma1step + (soma1step * taxaP2D));
+//Cliente solicita atualizacao ficando a calculadora: 
+//Comissao Parceiro = ((Tarifa + Taxa de Embarque) * 5%)
+soma2step = ((soma1step * 0.05));
 document.meu_form.valor_total2.value = soma2step.toFixed(2);
+
+//Linhas abaixo comentada
+//taxaP2D = (0.10);
+//soma2step = (soma1step + (soma1step * taxaP2D));
+//document.meu_form.valor_total2.value = soma2step.toFixed(2);
 
 //fazendo segundo passo
 
-soma3step = ((soma2step - taxaEmbarque)*0.05);
-document.meu_form.valor_total3.value = soma3step.toFixed(2);
+//soma3step = ((soma2step - taxaEmbarque)*0.05);
+//document.meu_form.valor_total3.value = soma3step.toFixed(2);
 
 
 //no evento do onblur para que nao apareça 'undefined'
