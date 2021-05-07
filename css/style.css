@@ -12,7 +12,9 @@ input{
 
 }
 #button{
-	margin-left: 40%;
+	margin: auto;
+	padding: 5px;
+
 }
 #nav{
 	background-color: #455ed1;
