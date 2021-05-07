@@ -15,7 +15,7 @@ function msg(){
 
     } else {
         // boa noite
-        msg.innerHTML = '<h4>Olá investidor, boa noite!</4h>'
+        msg.innerHTML = '<h4>Olá, boa noite!</4h>'
 
     }
 
