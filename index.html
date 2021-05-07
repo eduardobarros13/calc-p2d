@@ -8,6 +8,8 @@
 	<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
 
 	<script type="text/javascript" src="./js/calculadora.js"></script>
+	<script type="text/javascript" src="./js/msg.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="stylesheet" type="text/css" href="./css/normalise.css">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -24,17 +26,22 @@
 
 </style>
 
-<body>
+<body onload="msg()">
 	<nav class="navbar navbar-light bg-default" id="nav">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#" id="logo"><img src="./asset/img/p2d.png"></a>
 		</div>
-	</nav>		
-	<section>
+	</nav>
+	
+	<section id="caixa">
+
 		<div class="container" id="calculadora">
 			<div class="col-lg-12 md-12 sm-12">
 				<div class="row">
-					<div class="shadow-lg p-3 mb-5 bg-body rounded">
+					<div>
+						<div id="msg">
+
+						</div>
 						<i class="fas fa-calculator fa-3x"id="calc"></i>
 						<h5>Calculadora de comissão parceiro P2D</h5>
 
